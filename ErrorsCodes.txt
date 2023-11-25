@@ -1,0 +1,6 @@
+0x78245 = Game is corrupt, level was not succefully loaded, please re-download the game
+0x35126 = Game encountered an error while writing to disk, the disk is corrupted or write - protected (can often happen if you ran the game on an protected SD CARD !)
+0x62548 = SYSTEM cannot access Game, please restart you computer or disable AntiVirus Protection
+0x23684 = GAME CORRUPTED ! DOWNLOAD THE GAME AGAIN THEN RETRY, IF THIS ERROR OFTEN OCCURS, CONTACT PANDO
+0x00255 = Game cannot access CMD, please reintall windows or make sure CMD isn't protected by any AntiVirus
+0x00000 = SYSTEM Violation, Game has been modified and a line of code is missing !

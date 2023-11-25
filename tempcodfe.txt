@@ -1,0 +1,12 @@
+echo ONE = 0x78245 = Game is corrupt, level was not succefully loaded, please re-download the game. > %GAMEFOLD%/errors.gamesettings
+echo TWO = 0x35126 = Game encountered an error while writing to disk, the disk is corrupted or write - protected (can often happen if you ran the game on an protected SD CARD !) >> %GAMEFOLD%/errors.gamesettings
+echo THREE = 0x62548 = SYSTEM cannot access Game, please restart you computer or disable AntiVirus Protection >> %GAMEFOLD%/errors.gamesettings
+echo FOUR = 0x23684 = GAME CORRUPTED ! DOWNLOAD THE GAME AGAIN THEN RETRY, IF THIS ERROR OFTEN OCCURS, CONTACT PANDO >> %GAMEFOLD%/errors.gamesettings
+echo FIVE = 0x00255 = Game cannot access CMD, please reintall windows or make sure CMD isn't protected by any AntiVirus >> %GAMEFOLD%/errors.gamesettings
+echo sIX = 0x00000 = SYSTEM Violation, Game has been modified and a line of code is missing ! >> %GAMEFOLD%/errors.gamesettings
+echo GAMEVERSION = %GAMEVER% > %GAMFOLD%/settings.inf
+echo GAMEBUILDENGINE = %GAMEBUILD% >> %GAMFOLD%/settings.inf
+echo ISCOPYRIGHTED? = %COPYRIGHT% >> %GAMFOLD%/settings.inf
+echo GAMEDIRECTORY = %GAMEFOLD% >> %GAMFOLD%/settings.inf
+copy main.bat %GAMEFOLD%
+rename %GAMEFOLD%/main.bat GAMECOPY.bat.gamesettings.
