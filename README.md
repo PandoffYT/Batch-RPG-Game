@@ -1,5 +1,5 @@
 <h1>README</h1>
-<small>game was created by <strong>Pando</strong> ! This game is open-source and free of copyrights.</small>
+<h1>game was created by <strong>Pando</strong> ! This game is open-source and free of copyrights.</h1>
 
 <h2>- How to run the game ?</h2>
 <br>
