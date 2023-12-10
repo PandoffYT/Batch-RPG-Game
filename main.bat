@@ -180,3 +180,4 @@ if %errorlevel% equ 7 echo %username% made the following request in the menu : s
 cls
 echo %username% made the following request : %NOREQUEST% (Exit) as %NAME_NICKNAME% at %time% and %date% : Game will close>> %TEMP%/BatchGame/logs.txt
 exit
+
