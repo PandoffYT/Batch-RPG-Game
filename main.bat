@@ -18,6 +18,15 @@ if exist "%TEMP%/BatchGame" (
     goto welcome
 ) else (
     echo Welcome ! (First launch)
+    set FIRSTLAUNCH=0
+    set ISMENUREDIRECT=YES
+    set GAMEVER=1.0
+    set GAMEBUILD=1.2
+    set COPYRIGHT=NOCOPYRIGHT
+    set GAMEFOLD=BatchGame
+    set GAMEDIR=%TEMP%/%GAMEFOLD%
+    set GAMEDIRMD=%TEMP%\%GAMEFOLD%
+    md %GAMEDIRMD%
     echo FIRSTLAUNCH= %FIRSTLAUNCH% >> %GAMEDIR%/settings.inf
     echo GAMEVERSION = %GAMEVER% > %GAMEDIR%/settings.inf
     echo GAMEBUILDENGINE = %GAMEBUILD% >> %GAMEDIR%/settings.inf
