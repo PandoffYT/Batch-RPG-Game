@@ -18,22 +18,6 @@ if exist "%TEMP%/BatchGame" (
     goto welcome
 ) else (
     echo Welcome ! (First launch)
-    set FIRSTLAUNCH=0
-    set ISMENUREDIRECT=YES
-    set GAMEVER=1.0
-    set GAMEBUILD=1.2
-    set COPYRIGHT=NOCOPYRIGHT
-    set GAMEFOLD=BatchGame
-    set GAMEDIR=%TEMP%/%GAMEFOLD%
-    set GAMEDIRMD=%TEMP%\%GAMEFOLD%
-    md %GAMEDIRMD%
-    echo ONE = 0x78245 = Game is corrupt, level was not succefully loaded, please re-download the game. > %GAMEDIR%/errors.gamesettings
-    echo TWO = 0x35126 = Game encountered an error while writing to disk, the disk is corrupted or write - protected (can often happen if you ran the game on an protected SD CARD !) >> %GAMEDIR%/errors.gamesettings
-    echo THREE = 0x62548 = SYSTEM cannot access Game, please restart you computer or disable AntiVirus Protection >> %GAMEDIR%/errors.gamesettings
-    echo FOUR = 0x23684 = GAME CORRUPTED ! DOWNLOAD THE GAME AGAIN THEN RETRY, IF THIS ERROR OFTEN OCCURS, CONTACT PANDO >> %GAMEDIR%/errors.gamesettings
-    echo FIVE = 0x00255 = Game cannot access CMD, please reintall windows or make sure CMD isn't protected by any AntiVirus >> %GAMEDIR%/errors.gamesettings
-    echo SIX = 0x00000 = SYSTEM Violation, Game has been modified and a line of code is missing ! >> %GAMEDIR%/errors.gamesettings
-    echo SEVEN = 0x45714 = Stats are already created, value is UNDEFINED, failed to operate >> %GAMEDIR%/errors.gamesettings
     echo FIRSTLAUNCH= %FIRSTLAUNCH% >> %GAMEDIR%/settings.inf
     echo GAMEVERSION = %GAMEVER% > %GAMEDIR%/settings.inf
     echo GAMEBUILDENGINE = %GAMEBUILD% >> %GAMEDIR%/settings.inf
