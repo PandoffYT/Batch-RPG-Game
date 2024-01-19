@@ -1,9 +1,10 @@
 @echo off
+set "commandDefaultAreaPlaceHolder=commandDefaultAreaPlaceHolder"
 set "color_defaulta=a"
 echo %color_defaulta% > %TEMP%/BatchGame/color.txt
 setlocal enabledelayedexpansion
 set "GETCOLORMETHOD=%TEMP%/BatchGame/color.txt"
-for /f "usebackq delims=" %%a in ("%GETNICKNAMEMETHODDIR%") do (
+for /f "usebackq delims=" %%a in ("%GETCOLORMETHODDIR%") do (
     set "color_setdefaultusable=%%a"
 )
 color %color_setdefaultusable%
@@ -126,7 +127,7 @@ echo.
 echo.
 echo Type "goto settings" to return to the settings
 set /p comand_type_ig_temp="Enter your command:  "
-%comand_type_ig_temp%
+echo %username% made the following request in the menu : Command : %comand_prompt_ig_temp% (%commandDefaultAreaPlaceHolder%) as %NAME_NICKNAME% at %time% and %date%>> %TEMP%/BatchGame/logs.txt & %comand_type_ig_temp%
 goto command_prompt_ig_temp
 
 :exit_cmd
